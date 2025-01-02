@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"
+        href="https://finans7com.teimg.com/crop/1280x720/finans7-com/images/turkcell-ucretsiz-10-gb-internet-basvuru-ekra.png"
+        type="image/png">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .message {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 80px;
+            background-color: white;
+            color: red;
+            font-weight: bold;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="message">Siktir lan!</div>
+    <img src="https://media.tenor.com/5OexWJ5rWooAAAAM/hiko-baba-nah.gif" alt="">
+
+    <script>
+        window.onload = function () {
+            const message = document.querySelector('.message');
+            message.style.display = 'block';
+
+            setTimeout(() => {
+                message.style.display = 'none';
+            }, 2000);
+        };
+    </script>
+</body>
+
+</html>
